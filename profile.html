@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunil Kumar Y — Senior iOS Engineer</title>
+<meta name="description" content="Senior Software Engineer (iOS) with 11+ years building native Apple-platform apps in Swift, SwiftUI, UIKit and Objective-C across iOS and tvOS.">
+<meta property="og:title" content="Sunil Kumar Y — Senior iOS Engineer">
+<meta property="og:description" content="11+ years shipping native iOS and tvOS applications. Swift, SwiftUI, UIKit, Objective-C, modular architecture.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-alt:#f6f7f9;
+    --card:#ffffff;
+    --ink:#14171c;
+    --ink-2:#414957;
+    --ink-3:#6b7480;
+    --line:#e3e6ea;
+    --accent:#1f5fd8;
+    --accent-soft:#eaf0fd;
+    --radius:14px;
+    --maxw:860px;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f1216;
+      --bg-alt:#14181e;
+      --card:#161b22;
+      --ink:#eef1f5;
+      --ink-2:#b7c0cc;
+      --ink-3:#8b95a3;
+      --line:#262d37;
+      --accent:#6ea2ff;
+      --accent-soft:#18243a;
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:20px;padding-right:20px}
+
+  /* ---------- Header ---------- */
+  header{
+    padding-block:64px 44px;
+    border-bottom:1px solid var(--line);
+    background:var(--bg-alt);
+  }
+  .eyebrow{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);font-weight:650;margin:0 0 14px;
+  }
+  h1{
+    margin:0 0 8px;
+    font-size:clamp(32px,6vw,46px);
+    line-height:1.12;
+    letter-spacing:-.022em;
+    font-weight:700;
+  }
+  .role{
+    margin:0 0 20px;
+    font-size:clamp(17px,2.6vw,20px);
+    color:var(--ink-2);
+    font-weight:500;
+  }
+  .lede{
+    margin:0 0 28px;
+    max-width:60ch;
+    color:var(--ink-2);
+    font-size:16.5px;
+  }
+  .contact{
+    display:flex;flex-wrap:wrap;gap:10px;
+    list-style:none;margin:0;padding:0;
+  }
+  .contact a, .contact span{
+    display:inline-block;
+    padding:8px 14px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:var(--card);
+    color:var(--ink-2);
+    font-size:14.5px;
+    font-weight:500;
+  }
+  .contact a:hover{
+    border-color:var(--accent);
+    color:var(--accent);
+    text-decoration:none;
+  }
+
+  /* ---------- Stats ---------- */
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:14px;
+    margin:36px 0 0;
+  }
+  .stat{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--card);
+    padding:18px 18px 16px;
+  }
+  .stat b{
+    display:block;
+    font-size:26px;
+    letter-spacing:-.02em;
+    line-height:1.2;
+    margin-bottom:4px;
+  }
+  .stat span{font-size:13.5px;color:var(--ink-3)}
+
+  /* ---------- Sections ---------- */
+  section{padding-block:48px;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{
+    margin:0 0 24px;
+    font-size:13px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-3);
+    font-weight:650;
+  }
+
+  /* ---------- Skills ---------- */
+  .skills{display:grid;gap:22px}
+  .skill-group h3{
+    margin:0 0 10px;
+    font-size:15.5px;
+    font-weight:650;
+    letter-spacing:-.005em;
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:0;padding:0}
+  .tags li{
+    font-size:13.5px;
+    padding:5px 11px;
+    border-radius:8px;
+    background:var(--accent-soft);
+    color:var(--ink-2);
+    border:1px solid transparent;
+  }
+
+  /* ---------- Experience ---------- */
+  .job{
+    padding:22px 0;
+    border-top:1px solid var(--line);
+  }
+  .job:first-of-type{border-top:0;padding-top:0}
+  .job-head{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:4px 16px;
+    margin-bottom:2px;
+  }
+  .job-head h3{margin:0;font-size:18px;font-weight:680;letter-spacing:-.012em}
+  .dates{font-size:13.5px;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .job-role{margin:0 0 16px;color:var(--ink-2);font-size:15px}
+  .project{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:16px 18px;
+    margin-top:12px;
+  }
+  .project h4{
+    margin:0 0 8px;
+    font-size:15px;
+    font-weight:650;
+    letter-spacing:-.005em;
+  }
+  .project ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:15px}
+  .project li{margin-bottom:7px}
+  .project li:last-child{margin-bottom:0}
+  .stack{
+    margin-top:12px;
+    font-size:13px;
+    color:var(--ink-3);
+    line-height:1.55;
+  }
+  .stack b{color:var(--ink-2);font-weight:600}
+
+  /* ---------- Education / footer ---------- */
+  .edu{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--card);
+    padding:18px;
+  }
+  .edu h3{margin:0 0 4px;font-size:16px;font-weight:650}
+  .edu p{margin:0;color:var(--ink-3);font-size:14.5px}
+
+  footer{
+    padding-block:36px 52px;
+    color:var(--ink-3);
+    font-size:14px;
+    text-align:center;
+  }
+  footer p{margin:0 0 6px}
+
+  @media (max-width:520px){
+    header{padding-block:44px 36px}
+    .dates{white-space:normal}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">iOS &amp; tvOS Engineering</p>
+    <h1>Sunil Kumar Y</h1>
+    <p class="role">Senior Software Engineer — iOS</p>
+    <p class="lede">
+      11+ years building and shipping native Apple-platform applications. I work on modular,
+      scalable iOS architecture and reusable, developer-facing interfaces — most recently a shared
+      codebase serving 14 entertainment brands, and streaming apps used across the US, Europe and India.
+    </p>
+
+    <ul class="contact">
+      <li><a href="mailto:sunilshettyy65@gmail.com">sunilshettyy65@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/sunil-kumar-9600a9b3" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><span>Karnataka, India</span></li>
+    </ul>
+
+    <div class="stats">
+      <div class="stat"><b>11+</b><span>Years shipping iOS</span></div>
+      <div class="stat"><b>14</b><span>Brand apps, one codebase</span></div>
+      <div class="stat"><b>iOS · tvOS</b><span>Apple platforms</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+
+      <div class="skill-group">
+        <h3>Platforms &amp; Languages</h3>
+        <ul class="tags">
+          <li>Swift</li><li>SwiftUI</li><li>Objective-C</li><li>UIKit</li>
+          <li>Swift Concurrency</li><li>async/await</li><li>Actors</li>
+          <li>AVFoundation / AVPlayer</li><li>Core Data</li><li>Realm</li><li>Xcode</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Architecture &amp; API Design</h3>
+        <ul class="tags">
+          <li>Modular architecture</li><li>Developer-facing interfaces</li>
+          <li>Protocol-oriented programming</li><li>MVVM</li><li>MVC</li>
+          <li>Navigation &amp; state management</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Offline &amp; Data Sync</h3>
+        <ul class="tags">
+          <li>Offline-first architecture</li><li>Synchronization</li><li>Conflict handling</li>
+          <li>Local persistence</li><li>REST APIs</li><li>JSON</li>
+          <li>Deep linking</li><li>Push notifications</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Security &amp; Authentication</h3>
+        <ul class="tags">
+          <li>OAuth</li><li>Token-based auth</li><li>Keychain</li>
+          <li>Privacy manifests</li><li>Sensitive-data handling</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Testing &amp; Quality</h3>
+        <ul class="tags">
+          <li>XCTest</li><li>UI testing</li><li>Snapshot testing</li>
+          <li>Testable architecture</li><li>Code review</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Performance &amp; Monitoring</h3>
+        <ul class="tags">
+          <li>Xcode Instruments</li><li>Memory Graph</li><li>Charles Proxy</li>
+          <li>New Relic</li><li>Mux</li><li>ARC &amp; memory management</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>CI/CD &amp; Delivery</h3>
+        <ul class="tags">
+          <li>GitHub Actions</li><li>Fastlane</li><li>XcodeGen</li><li>JFrog</li>
+          <li>CodeQL</li><li>SonarCloud</li><li>App Store releases</li><li>Agile / Scrum</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Robosoft Technologies</h3>
+        <span class="dates">Aug 2020 — Present</span>
+      </div>
+      <p class="job-role">Technical Lead</p>
+
+      <div class="project">
+        <h4>TV Everywhere Shared Platform — 14 entertainment brands</h4>
+        <ul>
+          <li>Design modular Swift and UIKit components and reusable integration interfaces consumed by multiple brand teams inside one shared codebase.</li>
+          <li>Simplified partner-attribution architecture by consolidating factory interfaces and centralizing session-state resolution — less caller complexity, consistent behaviour across Apple platforms.</li>
+          <li>Balance brand-specific requirements against maintainability, performance and release safety so a single codebase serves many products without fragmenting.</li>
+          <li>Lead technical design discussions and mentor engineers across distributed teams through design review, PR review, documentation and pairing.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Swift · SwiftUI · UIKit · Modular architecture · Protocol-oriented programming · Snapshot testing · XcodeGen · Fastlane · CI/CD</p>
+      </div>
+
+      <div class="project">
+        <h4>Warner Bros. Discovery — HBO Max &amp; discovery+ (iOS &amp; tvOS)</h4>
+        <ul>
+          <li>Build and maintain features across large-scale streaming apps used by audiences in the United States, Europe and India.</li>
+          <li>Diagnose complex playback, networking and analytics issues with Instruments, Memory Graph, Charles Proxy, New Relic and Mux — isolating client, CDN and backend causes.</li>
+          <li>Implement partner authentication with OAuth and token-based sign-in, credentials held in the Keychain.</li>
+          <li>Deliver Apple-platform readiness each cycle: new iOS and Xcode releases, privacy manifests, deep-link configuration and localization.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Swift · Objective-C · UIKit · AVFoundation / AVPlayer · REST APIs · XCTest · GitHub Actions · New Relic · Mux</p>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Publicis Sapient</h3>
+        <span class="dates">Apr 2019 — Aug 2020</span>
+      </div>
+      <p class="job-role">Senior Developer, Mobile Solutions L1</p>
+
+      <div class="project">
+        <h4>McDonald's USA iOS application</h4>
+        <ul>
+          <li>Built native iOS features for location-based offers, restaurant discovery, ordering, curbside pickup, and in-store and drive-thru collection.</li>
+          <li>Integrated Swift and UIKit features with cloud-backed REST services, local persistence and third-party SDKs, with attention to reliability on variable networks.</li>
+          <li>Resolved defects, supported testing and production releases, and contributed to estimation and code review in a large cross-functional Agile program.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Swift · UIKit · REST APIs · Local persistence · Location services · Third-party SDKs</p>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-head">
+        <h3>Codecraft Technologies</h3>
+        <span class="dates">Jan 2015 — Mar 2019</span>
+      </div>
+      <p class="job-role">Senior iOS Developer</p>
+
+      <div class="project">
+        <h4>Fulton Hogan Field Operations — Australia &amp; New Zealand</h4>
+        <ul>
+          <li>Led enterprise features for offline-first daily job reporting with Salesforce synchronization, used by field crews working without connectivity.</li>
+          <li>Designed networking and persistence flows supporting both online and offline operation in enterprise environments.</li>
+          <li>Handled synchronization conflicts and partial failures so records captured offline reconciled correctly once devices reconnected.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Swift · Objective-C · UIKit · Core Data · REST APIs · Salesforce integration · Offline persistence</p>
+      </div>
+
+      <div class="project">
+        <h4>Media &amp; healthcare apps — Flare Kids, SmartBP, Glosi, Olpa</h4>
+        <ul>
+          <li>Delivered multiple native iOS products end to end, from requirements through App Store release.</li>
+          <li>Implemented media playback and child-account features for Flare Kids, health tracking for SmartBP, and content experiences for Glosi and Olpa.</li>
+          <li>Integrated push notifications, analytics, social login, location services, localization and third-party SDKs.</li>
+        </ul>
+        <p class="stack"><b>Stack:</b> Swift · Objective-C · UIKit · MVC / MVVM · REST services · Local storage · Push notifications · Analytics</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p>NMAM Institute of Technology · Visvesvaraya Technological University (VTU)</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Open to senior iOS engineering roles.</p>
+    <p><a href="mailto:sunilshettyy65@gmail.com">sunilshettyy65@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
